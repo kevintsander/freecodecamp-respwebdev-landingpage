@@ -31,6 +31,7 @@ header {
     position: fixed;
     display: flex;
     width: calc(100vw - var(--nav-padding-top));
+    min-width: 450px;
     top: 0px;
     height: var(--nav-height);
     align-items: center;
@@ -110,6 +111,11 @@ main {
     gap: 4px;
 }
 
+#video {
+    width: 100%;
+    max-width: 560px;
+}
+
 footer {
     font-size: 12px;
     margin-top: auto;
@@ -124,11 +130,20 @@ footer {
         --nav-height: 180px;
     }
 
+    h1 {
+        font-size: 28px;
+    }
+
     #nav-bar {
         flex-direction: column;
     }
 
     .nav-item {
+        width: 100px;
+    }
+
+    .content-img {
+        flex: 0 0 auto;
         width: 100px;
     }
 }
