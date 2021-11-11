@@ -147,3 +147,11 @@ footer {
         width: 100px;
     }
 }
+
+@media (max-width: 390px)
+{
+
+    :root {
+        --nav-height: 200px;
+    }
+}
