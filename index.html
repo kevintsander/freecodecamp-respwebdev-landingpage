@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
+    <link rel="stylesheet" href="/style/style.css" <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header id="header">
-        <img id="header-img" alt="Header Image">
+        <img id="header-img" alt="Header Image" src="images/goetta.png">
+        <h1>Live Betta' with Goetta</h1>
 
         <nav id="nav-bar">
-            <ul>
-                <li><a href="" class="nav-link">Link 1</a></li>
-                <li><a href="" class="nav-link">Link 2</a></li>
-                <li><a href="" class="nav-link">Link 3</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#history" class="nav-link">History</a></li>
+                <li><a href="#brands" class="nav-link">Famous Brands</a></li>
+                <li><a href="#how-to" class="nav-link">How-To</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <form id="form">
-            <label for="email">Email: <input type="email" placeholder="Email Address"></label>
-            <input type="submit" id="submit" value="Submit">
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email">Email: <input id="email" name="email" type="email" placeholder="Email Address"></label>
+            <input type="submit" id="submit" name="submit" value="Submit">
         </form>
 
-        <video id="video"></video>
+        <section class="content" id="history">
+            <h2>History of Goetta</h2>
+        </section>
+
+        <section class="content" id="brands">
+            <h2>Famous Goetta Brands</h2>
+            <div class="content-item">
+                <img class="content-img" src="/images/Gliers-Logo-2048x943.png">
+                <div class="content-text">
+                    <h3>Glier's Goetta</h3>
+                    <p>"Pronounced “get-uh,” Goetta is a German breakfast sausage that blends the textures and flavors
+                        of pork, beef, whole grain steel-cut oats, fresh onions, and spices. It is slow-cooked daily in
+                        our factory and perfectly prepared when browned and served. Producing over one million pounds of
+                        goetta each year, Glier’s Goetta is the best selling Goetta in the world."</p>
+                    <a href="https://goetta.com/">Website</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content" id="how-to">
+            <h2>How-To Make Goetta</h2>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/FINqJgA5BOw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
     </main>
 
+    <footer>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
